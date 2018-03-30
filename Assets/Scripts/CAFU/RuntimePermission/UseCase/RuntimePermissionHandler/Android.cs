@@ -34,6 +34,9 @@ namespace CAFU.RuntimePermission.Domain.UseCase.RuntimePermissionHandler {
             }
 
             public IObservable<bool> RequestPermission(UserAuthorization userAuthorization) {
+                if (this.HasPermission(userAuthorization)) {
+                    return Observable.Return(true);
+                }
                 using (var activity = GetActivity())
                 using (var compat = new AndroidJavaClass(JAVA_CLASS_NAME_CONTEXT_COMPAT)) {
                     compat.CallStatic(JAVA_METHOD_NAME_REQUEST_PERMISSIONS, activity, new [] { PERMISSION_NAME_MAP[userAuthorization] }, 0);
