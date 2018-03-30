@@ -15,7 +15,7 @@ namespace CAFU.RuntimePermission.Domain.UseCase.RuntimePermissionHandler {
                 return Observable.Return(true);
             }
             Application.RequestUserAuthorization(userAuthorization);
-            return Observable.EveryApplicationFocus().Where(x => true).Take(1).Select(_ => this.HasPermission(userAuthorization));
+            return this.CreateRuntimePermissionDialogResultObservable(userAuthorization);
         }
 
     }
