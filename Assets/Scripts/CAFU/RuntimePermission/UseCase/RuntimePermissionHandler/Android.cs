@@ -12,6 +12,8 @@ namespace CAFU.RuntimePermission.Domain.UseCase.RuntimePermissionHandler {
 
             private const string JAVA_CLASS_NAME_CONTEXT_COMPAT = "android.support.v4.content.ContextCompat";
 
+            private const string JAVA_CLASS_NAME_ACTIVITY_COMPAT = "android.support.v4.app.ActivityCompat";
+
             private const string JAVA_METHOD_NAME_CHECK_SELF_PERMISSION = "checkSelfPermission";
 
             private const string JAVA_METHOD_NAME_REQUEST_PERMISSIONS = "requestPermissions";
@@ -38,7 +40,7 @@ namespace CAFU.RuntimePermission.Domain.UseCase.RuntimePermissionHandler {
                     return Observable.Return(true);
                 }
                 using (var activity = GetActivity())
-                using (var compat = new AndroidJavaClass(JAVA_CLASS_NAME_CONTEXT_COMPAT)) {
+                using (var compat = new AndroidJavaClass(JAVA_CLASS_NAME_ACTIVITY_COMPAT)) {
                     compat.CallStatic(JAVA_METHOD_NAME_REQUEST_PERMISSIONS, activity, new [] { PERMISSION_NAME_MAP[userAuthorization] }, 0);
                 }
                 return this.CreateRuntimePermissionDialogResultObservable(userAuthorization);
