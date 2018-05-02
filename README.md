@@ -11,7 +11,7 @@
 ## Install
 
 ```shell
-$ npm install github:umm-projects/cafu_runtime_permission
+yarn add "umm-projects/cafu_runtime_permission#^1.0.0"
 ```
 
 ## Usage
