@@ -1,0 +1,11 @@
+{
+    "name": "umm@cafu_runtime_permission",
+    "references": [
+        "umm@cafu_core",
+        "umm@unirx"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false
+}
