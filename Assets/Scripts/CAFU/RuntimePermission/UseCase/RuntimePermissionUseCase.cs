@@ -1,6 +1,6 @@
+using System;
 using CAFU.Core.Domain.UseCase;
 using CAFU.RuntimePermission.Domain.UseCase.RuntimePermissionHandler;
-using UniRx;
 using UnityEngine;
 
 namespace CAFU.RuntimePermission.Domain.UseCase {

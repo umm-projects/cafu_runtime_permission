@@ -8,13 +8,13 @@ namespace CAFU.RuntimePermission.Domain.UseCase {
 
         bool HasPermission(UserAuthorization userAuthorization);
 
-        UniRx.IObservable<bool> RequestPermission(UserAuthorization userAuthorization);
+        IObservable<bool> RequestPermission(UserAuthorization userAuthorization);
 
     }
 
     public static class RuntimePermissionHandlerExtension {
 
-        public static UniRx.IObservable<bool> CreateRuntimePermissionDialogResultObservable(this IRuntimePermissionHandler runtimePermissionHandler, UserAuthorization userAuthorization) {
+        public static IObservable<bool> CreateRuntimePermissionDialogResultObservable(this IRuntimePermissionHandler runtimePermissionHandler, UserAuthorization userAuthorization) {
             return Observable
                 // ReSharper disable once InvokeAsExtensionMethod
                 .Merge(
