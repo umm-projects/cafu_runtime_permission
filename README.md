@@ -11,7 +11,7 @@
 ## Install
 
 ```shell
-yarn add "umm-projects/cafu_runtime_permission#^1.0.0"
+yarn add "umm/cafu_runtime_permission#^1.0.0"
 ```
 
 ## Usage
