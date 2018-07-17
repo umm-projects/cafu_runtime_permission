@@ -2,9 +2,9 @@
   "name": "@umm/cafu_runtime_permission",
   "version": "1.2.0",
   "description": "",
-  "homepage": "https://github.com/umm-projects/cafu_runtime_permission",
+  "homepage": "https://github.com/umm/cafu_runtime_permission",
   "bugs": {
-    "url": "https://github.com/umm-projects/cafu_runtime_permission/issues"
+    "url": "https://github.com/umm/cafu_runtime_permission/issues"
   },
   "scripts": {
     "umm:init": "umm-init",
@@ -18,16 +18,16 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git@github.com:umm-projects/cafu_runtime_permission"
+    "url": "git@github.com:umm/cafu_runtime_permission"
   },
   "files": [
     "Assets",
     "scripts"
   ],
   "dependencies": {
-    "@umm/cafu_core": "umm-projects/cafu_core#^2.0.0",
-    "@umm/scripts": "umm-projects/scripts#^1.0.0",
-    "@umm/unirx": "umm-projects/unirx#^2.0.0"
+    "@umm/cafu_core": "umm/cafu_core#^2.0.0",
+    "@umm/scripts": "umm/scripts#^1.0.0",
+    "@umm/unirx": "umm/unirx#^2.0.0"
   },
   "devDependencies": {}
 }
