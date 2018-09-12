@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace CAFU.RuntimePermission.Domain.UseCase {
 
-    public interface IRuntimePermissionUserCase : IUseCase {
+    public interface IRuntimePermissionUseCase : IUseCase {
 
         bool HasPermission(UserAuthorization userAuthorization);
 
@@ -13,7 +13,12 @@ namespace CAFU.RuntimePermission.Domain.UseCase {
 
     }
 
-    public class RuntimePermissionUseCase : IRuntimePermissionUserCase {
+    [Obsolete("Please use `IRuntimePermissionUseCase', because this interface is typoed...")]
+    public interface IRuntimePermissionUserCase : IRuntimePermissionUseCase
+    {
+    }
+
+    public class RuntimePermissionUseCase : IRuntimePermissionUseCase {
 
         public class Factory : DefaultUseCaseFactory<RuntimePermissionUseCase> {
 
