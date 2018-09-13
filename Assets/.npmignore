@@ -3,5 +3,7 @@ Modules/
 Modules.meta
 Plugins/
 Plugins.meta
+!Plugins/Android/
+!Plugins/Android.meta
 Tests/
 Tests.meta
