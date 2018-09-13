@@ -2,7 +2,7 @@
 <manifest
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="tv.monry.umm.cafu_runtime_permission"
+    package="umm.cafu_runtime_permission"
   >
   <application>
     <meta-data android:name="unityplayer.SkipPermissionsDialog" android:value="true" />
