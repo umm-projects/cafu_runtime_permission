@@ -12,7 +12,7 @@
     "umm:module:install": "umm-module-install",
     "umm:module:uninstall": "umm-module-uninstall",
     "postinstall": "npm run --silent umm:module:install",
-    "postuninstall": "npm run --silent umm:module:uninstall"
+    "postuninstall": "npm run --silent umm:module:uninstall && node ./scripts/postinstall.js"
   },
   "author": "Tetsuya Mori",
   "license": "MIT",
