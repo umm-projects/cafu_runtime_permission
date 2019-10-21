@@ -11,9 +11,9 @@ namespace CAFU.RuntimePermission.Domain.UseCase.RuntimePermissionHandler {
 
             private const string JAVA_CLASS_NAME_PACKAGE_MANAGER = "android.content.pm.PackageManager";
 
-            private const string JAVA_CLASS_NAME_CONTEXT_COMPAT = "android.support.v4.content.ContextCompat";
+            private const string JAVA_CLASS_NAME_CONTEXT_COMPAT = "androidx.core.content.ContextCompat";
 
-            private const string JAVA_CLASS_NAME_ACTIVITY_COMPAT = "android.support.v4.app.ActivityCompat";
+            private const string JAVA_CLASS_NAME_ACTIVITY_COMPAT = "androidx.core.app.ActivityCompat";
 
             private const string JAVA_METHOD_NAME_CHECK_SELF_PERMISSION = "checkSelfPermission";
 
